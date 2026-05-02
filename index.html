@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- Meta tags for character encoding and responsive design -->
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Experiments</title>
+
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Background music element with loop enabled -->
+    <audio id="music-bg" src="Night Trouble.mp3" loop></audio>
+
+    <!-- Navigation section -->
+    <div class="nav-content">
+        <nav>
+            <!-- Logo container -->
+            <div class="logo">
+                <img src="logo.webp" alt="">
+            </div>
+
+            <!-- Navigation links -->
+            <div class="navlinks">
+                <ul>
+                    <!-- Music toggle button -->
+                    <li><button onclick="controlBgMusic()" id="music-toggle">🎵</button></li>
+
+                    <!-- Navigation menu items -->
+                    <li><a href="#home">home</a></li>
+
+                    <li><a href="#about">about dev</a></li>
+
+                    <li><a href="#contact">contact</a></li>
+
+                    <li><a href="https://github.com/next-ayanokoji" target="_blank">github</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Main hero section -->
+    <div class="hero">
+        <section class="hero-content">
+            <!-- Decorative circles -->
+            <div class="circles"></div>
+
+            <!-- Hero content container -->
+            <div class="hero-con">
+                <!-- Hero text section -->
+                <div class="hero-text">
+                    <h1>Hello, I'm SHORYA</h1>
+
+                    <!-- Job title with custom styling -->
+                    <p style="font-weight: bolder; font-family: 'Playwrite Deutschland Schulausgangschrift'; color: white;">WEB DEVELOPER</p>
+
+                    <!-- Hero description paragraph -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
+                        <!-- Decorative circles within text -->
+                        <div class="circles"></div>
+                        et incidunt illum, delectus excepturi maiores quos earum sint, blanditiis explicabo possimus. Consequatur blanditiis ratione odio possimus fugiat commodi voluptates libero!
+                    </p>
+
+                    <!-- Call-to-action button -->
+                    <button id="projects" onclick="opengithub()">view projects</button>
+                </div>
+
+                <!-- Hero image section -->
+                <div class="hero-img">
+                    <img src="logo2.png" alt="">
+                    <!-- Decorative circles -->
+                    <div class="circles"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Information section containing about, skills, and projects -->
+        <div class="info">
+            <!-- About Me section -->
+            <div class="about">
+                <div class="ab-left">
+                    <h1 align="center"><i>About Me</i></h1>
+                    <br>
+
+                    <!-- About description list -->
+                    <div id="about-inn">
+                        <ul class="boutme">
+                            <li>I'm a web developer with a passion for creating beautiful and functional websites.</li>
+
+                            <li>I have experience in HTML, CSS, JavaScript, and React.</li>
+
+                            <li>I'm always looking to learn new technologies and improve my skills.</li>
+
+                            <li>I'm a team player and I enjoy collaborating with others to create amazing projects.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- My Skills section -->
+                <div class="ab-right">
+                    <h1 align="center"><i>My Skills</i></h1>
+                    <br>
+
+                    <!-- Skills list -->
+                    <div id="about-inn">
+                        <ul class="boutme">
+                            <li>HTML: I have a strong understanding of HTML and its various elements and attributes.</li>
+
+                            <li>CSS: I am proficient in CSS and can create responsive and visually appealing designs.</li>
+
+                            <li>JavaScript: I have experience with JavaScript and can create interactive web applications.</li>
+
+                            <li>React: I have experience with React and can create dynamic user interfaces.</li>
+
+                            <li>Networking: I have a basic understanding of networking concepts and protocols.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Calculator project section -->
+            <div class="ab-pro">
+                <h2 align="center"><i>Calculator</i></h2>
+
+                <div class="boutme">
+                    <!-- Project description -->
+                    <p>This is a simple calculator built using HTML, CSS, and JavaScript. It allows users to perform basic arithmetic operations such as addition, subtraction, multiplication, and division. The calculator has a user-friendly interface and is responsive, making it accessible on various devices.</p>
+                    <br>
+
+                    <!-- Addition calculator -->
+                    <h4><u>Addition</u></h4>
+
+                    <!-- Input fields for addition -->
+                    Enter first number: <input type="number" id="num1"><br>
+
+                    Enter second number: <input type="number" id="num2"><br>
+
+                    <!-- Addition operation button and result display -->
+                    <div class="sum-put">
+                        <div>
+                            <!-- Add button with icon and result span -->
+                            <button onclick="addwithdelay(); refresh()" class="adder">
+                                <img src="icons8-sum-100.png" class="icons">
+                            </button>
+                            output= <span id="add-result"></span>
+                        </div>
+
+                        <!-- Placeholder for animation/dancer image -->
+                        <div><img src="" id="dancers"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Subtraction project section -->
+            <div class="ab-pro">
+                <h2 align="center"><i>Subtraction</i></h2>
+
+                <div class="boutme">
+                    <!-- Project description -->
+                    <p>This is a simple subtraction calculator built using HTML, CSS, and JavaScript.</p>
+                    <br>
+
+                    <!-- Formula explanation -->
+                    Answer = first number - second number <br>
+
+                    <!-- Input fields for subtraction -->
+                    Enter first number: <input type="number" id="num3"><br>
+
+                    Enter second number: <input type="number" id="num4"><br>
+
+                    <!-- Subtraction operation button and result display -->
+                    <div class="sub-put">
+                        <div>
+                            <!-- Subtract button with icon and result span -->
+                            <button onclick="subtract(); refresh()" class="subtractor">
+                                <img src="icons8-substract-24.png" class="icons">
+                            </button>
+                            output= <span id="sub-result"></span>
+                        </div>
+
+                        <!-- Placeholder for animation/dancer image -->
+                        <div><img src="" id="dancers2"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Me section -->
+            <div class="ab-pro">
+                <h2 align="center"><i><u>Contact me</u></i></h2>
+
+                <div class="boutme" style="font-size: larger;">
+                    <!-- Contact description -->
+                    <p>Feel free to reach out to me for collaboration, projects, or just to connect.</p>
+
+                    <!-- Contact information list -->
+                    <ul class="contact-list">
+                        <li>Email: <a href="mailto:shoryagoyal074@gmail.com">shoryagoyal074@gmail.com</a></li>
+
+                        <li>Instagram: <a href="https://instagram.com/random_ayanokoji" target="_blank">@random_ayanokoji</a></li>
+
+                        <li>GitHub: <a href="https://github.com/next-ayanokoji" target="_blank">next-ayanokoji</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
