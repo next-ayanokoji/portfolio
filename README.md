@@ -32,3 +32,60 @@ This project showcases my skills, projects, and includes interactive features li
 ---
 
 ## 📂 Project Structure
+project/
+│── index.html
+│── style.css
+│── script.js
+│── assets/
+│ ├── images
+│ ├── icons
+│ └── music
+
+---
+
+## ⚙️ How to Run
+
+1. Clone the repository
+2. 
+2. Open `index.html` in your browser
+
+---
+
+## 🎯 Key Concepts Used
+
+- DOM manipulation  
+- Event handling  
+- setTimeout (for delayed execution)  
+- Responsive layout using Flexbox  
+- Media queries for mobile support  
+
+---
+
+## 💡 Future Improvements
+
+- Add multiplication & division
+- Improve animations
+- Add project showcase section
+- Convert into React app
+- Add backend for contact form
+
+---
+
+## 📬 Contact Me
+
+- 📧 Email: shoryagoyal074@gmail.com  
+- 📸 Instagram: https://instagram.com/random_ayanokoji  
+- 💻 GitHub: https://github.com/next-ayanokoji  
+
+---
+
+## 👨‍💻 Author
+
+**Shorya**  
+Aspiring Web Developer 🚀  
+
+---
+
+## ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub!
